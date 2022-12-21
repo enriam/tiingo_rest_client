@@ -1,0 +1,15 @@
+# cache directory
+__pycache__/
+
+# cache files
+*.pyc
+
+# csv files
+*.csv
+
+# test files
+*test*
+
+# vs code
+.vscode/
+.history/
