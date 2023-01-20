@@ -21,13 +21,13 @@ class TiingoError(Exception):
 class TiingoRESTClient:
     """REST client used to connect and retrieve data from tiingo.com"""
 
-    # --- REST endpoints
+    # --- REST ENDPOINTS
     # end of day data
     _tii_eod = "https://api.tiingo.com/tiingo/daily/"
     # intraday data
     _tii_iex = "https://api.tiingo.com/iex/"
 
-    # --- Column names
+    # --- COLUMN NAMES
     # end of day data
     _tii_eod_cols = (
         "open",
@@ -71,7 +71,7 @@ class TiingoRESTClient:
         "askPrice",
     )
 
-    # --- Resample frequencies
+    # --- RESAMPLE FREQUENCIES
     # fixed frequencies (eod endpoint)
     _tii_resample_freqs = ("daily", "weekly", "monthly", "annually")
     # pattern frequencies (iex endpoint)
@@ -163,7 +163,7 @@ class TiingoRESTClient:
         r = requests.get(tii_request, headers=self._tii_headers)
         return r.json()
 
-    def get_stock_hist(
+    def get_stock_historical(
         self,
         tickers: Union[str, Sequence[str]],
         frequency: str,
