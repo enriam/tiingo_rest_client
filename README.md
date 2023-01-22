@@ -1,10 +1,8 @@
 # Tiingo Rest Client For Stock Prices
 
-A very simple python REST client for Tiingo's financial markets API. It can be used to retrieve stock historical and current prices, but not fundamentals, crypto or forex data.
+A very simple python REST client for Tiingo's financial markets API. It can be used to retrieve historical and current prices only for stocks and ETFs, but not for crypto or forex so far.
 
-I use this as a  tool to retrieve stock and ETF historical prices for my own research and analysis of investment strategies. So far I have not needed crypto or forex data, that's the reason why I have not implemented that functionality.
-
-This does not pretend to be a professional grade application, only an easy-to-use tool that can make the job if you just need to download stock prices for your own use.
+I use this piece of code as a  tool to retrieve historical prices for my own research and analysis of investment strategies. This does not pretend to be a professional grade application, only an easy-to-use tool that can make the job if you just need to download stock prices for your own use.
 
 ## Usage
 
@@ -31,7 +29,7 @@ There are three main methods:
 
 The first one will retreive info about the stock instrument, like the start and end dates of available price data, instrument description, the Exchange it is listed on, etc.
 
-The other two will retrieve end of day historical data between two dates and last traded price, respectively.
+The other two will retrieve, respectively, end of day historical data between two dates and last traded price.
 
 ## Example of usage
 
